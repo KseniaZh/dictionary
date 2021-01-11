@@ -1,0 +1,30 @@
+@import "./const_color_Coffee.scss";
+@import "../mixin_const.scss";
+
+.Wrapper {
+    z-index: 50;
+    background: $authorization-background;
+    @include box-all-body (fixed);
+    cursor: default;
+    display: flex;
+
+    > div {
+        background: $warning-background-auth;
+        box-shadow: $warning-shadow;
+        border-radius: 15px;
+        font-family: $font-family-1;
+        font-style: normal;
+        color: $warning-color;
+        display: flex;
+        height: auto;
+        padding-bottom: 3em;
+        @include box-central-position;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+}
+

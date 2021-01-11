@@ -1,0 +1,226 @@
+// footer
+// консоль переключения и окно выбора к-во строк на странице
+
+.ConsoleCountRow{
+    
+    width: 96%;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    font-family: $font-family-1;
+    font-weight: bolder;
+    font-size: 16px;
+    color: $header-color_active;
+    
+    //текст Открыта страница 1 из 100
+    >div:nth-child(1){
+        width: 25%;
+        margin-left: 0;
+        
+        >span{
+            font-size: 19px;
+            margin-left: 12px;
+        }
+    }
+    
+    //консоль переключения
+    //konsol pereklu4enia
+    >div:nth-child(2){
+     
+        width: 50%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+            //коробка стрелок влево
+            //korobka strelok vlevo
+            >div:nth-child(1){
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                
+                width: 20%;
+                
+                >div{
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 3%;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    outline: none !important;
+                    transition: all 150ms ease-in-out;
+                    @include children-center;
+                }
+                >div:hover{
+
+                    font-size: 20px;
+                    background: $button-console-footer-background_hover;
+                    border: $button-console-footer-border_hover;
+                    box-shadow: $button-console-footer-shadow_hover;
+                    color: $header-color_hover;
+                }
+                >div:active{
+
+                    background: $button-console-footer-background_activ;
+                    border: $button-console-footer-border_activ;
+                    box-shadow: $button-console-footer-shadow_activ;
+                    color: $header-color_active;
+                }
+            }
+            //коробка с цифрами
+        //korobka c ziframi
+            >div:nth-child(2){
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                width: 35%;
+                
+                >div{
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 5%;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    outline: none !important;
+                    transition: all 150ms ease-in-out;
+                    @include children-center;
+                }
+                >div:hover{
+
+                    font-size: 20px;
+                    background: $button-console-footer-background_hover;
+                    border: $button-console-footer-border_hover;
+                    box-shadow: $button-console-footer-shadow_hover;
+                    color: $header-color_hover;
+                }
+                >div:active{
+
+                    background: $button-console-footer-background_activ;
+                    border: $button-console-footer-border_activ;
+                    box-shadow: $button-console-footer-shadow_activ;
+                    color: $header-color_active;
+                }
+            }
+        
+            //коробка стрелок вправо
+        //korobka strelok vpravo
+            >div:nth-child(3){
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                
+                width: 20%;
+
+                >div{
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 3%;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    outline: none !important;
+                    transition: all 150ms ease-in-out;
+                    @include children-center;
+                }
+                >div:hover{
+
+                    font-size: 20px;
+                    background: $button-console-footer-background_hover;
+                    border: $button-console-footer-border_hover;
+                    box-shadow: $button-console-footer-shadow_hover;
+                    color: $header-color_hover;
+                }
+                >div:active{
+
+                    background: $button-console-footer-background_activ;
+                    border: $button-console-footer-border_activ;
+                    box-shadow: $button-console-footer-shadow_activ;
+                    color: $header-color_active;
+                }
+            }
+    }
+    
+    
+    //окно с выбором к-во строк на странице
+    // okno vibora koli4ectva strok na stranize
+    >div:nth-child(3){
+            width: 30%;
+            height: 25px;
+            text-align: right;
+        
+            >div{
+                display: inline-flex;
+
+                >span{
+                    padding: 0 16px;
+                    font-size: 19px;
+                }
+
+                >lebel{
+                    margin: 10px;
+                    padding: 7px; 
+                }
+
+                >input{
+                    width: 55px;
+                    height: 25px;
+                    border-radius: 5px;
+                    margin-left: 22px;
+                    text-align: center;
+                    color: $header-color_active;
+                    font-size: 19px;
+                    background: $table-background; 
+                    outline:none;
+                    border-color: $table-background;
+                }
+
+                >input:invalid{
+                    background: $invalid-background;
+                }
+            }
+    }
+    
+    //кнопка активного инпута
+    //knopka aktivnogo inputa
+    >div:nth-child(4){
+            margin: 0 1% 0 1%;
+            padding: 10px 12px;
+            border-radius: 5px;
+            outline: none;   
+            opacity: .6;
+            font-size: 25px;
+            cursor: pointer;
+            color: $header-color_hover; 
+            transition: all .2s ease-in;
+    }
+    >div:nth-child(4):hover{
+            opacity: 1;
+            background: $button-console-footer-background_hover;
+            border: $button-console-footer-border_hover;
+            box-shadow: $button-console-footer-shadow_hover;
+    }
+    >div:nth-child(4):active{
+            opacity: .8;
+            background: $button-console-footer-background_activ;
+            border: $button-console-footer-border_activ;
+            box-shadow: $button-console-footer-shadow_activ;
+            >*{
+                outline: none !important;
+            }
+    }
+}
+
+

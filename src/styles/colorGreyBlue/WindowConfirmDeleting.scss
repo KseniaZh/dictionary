@@ -1,0 +1,106 @@
+@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+.GB-WindowConfirmDeleting{
+    width: 38%;
+    height: 40%;
+    padding: 0.2em;
+
+    >p{
+        text-align: center; 
+    }
+    
+    >div{
+        display: flex;
+        width: 100%;
+    }
+    
+    >div:first-of-type{
+
+        width: 40px;
+        height: 45px;
+        align-items:center;
+        outline: none !important;
+        
+        >*>span{
+            font-size: 1.5rem;
+            color: $warning-color;
+        }
+        >*>span:hover{
+            font-size: 1.8rem;
+            color: $warning-color-hover;
+        }
+    }
+    
+    >div:nth-of-type(2){
+
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items:center;
+        color: $warning-color;
+        margin-top: 1rem;
+        >p{
+            font-size: 1.6rem;            
+            padding:0;
+            margin: 1rem 0;
+        }
+    }
+    
+    >div:last-of-type{
+
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items:center;
+        color: $warning-color;
+        margin-top: 1.5rem;
+        margin-bottom: 2em;
+        
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 135px;
+            height: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            padding: .9rem 0 0.1rem 0;
+            margin: 0 1rem;
+            
+            background: $warning-button-background;
+            box-shadow: $warning-button-shadow;
+    
+            >*{
+                width: 100%;
+                height: 100%;
+                font-size: 1.1rem; 
+                text-align: center;
+                text-decoration: none;
+                color: $warning-color;
+            }
+        }
+        >div:hover{
+            transition: all 150ms ease-in-out;
+            background: $warning-button-background_hover;
+            box-shadow: $warning-button-shadow_hover;
+            >*{
+                transition: all 150ms ease-in-out;
+                font-size: 1.2rem;
+                color: $warning-color-hover;
+            }
+        }
+        >div:active{
+            transition: all 200ms ease-in-out;
+            background: $warning-button-background_active;
+            box-shadow: $warning-button-shadow_active;
+            >*{
+                transition: all 150ms ease-in-out;
+                font-size: 1.1rem;
+            }
+        }
+    }  
+}

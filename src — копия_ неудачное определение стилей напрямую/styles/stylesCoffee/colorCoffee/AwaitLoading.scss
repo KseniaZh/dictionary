@@ -1,0 +1,45 @@
+@import "./const_color_Coffee.scss";
+
+.Loading{
+    align-self: center;
+    user-select: none;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+    bottom: 12%;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    color: $header-color;
+    font-size: 65px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    border-bottom: 10px solid $header-color;
+    
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "Loading...";
+        color: $header-color_hover;
+        border-bottom: 10px solid $header-color_hover;
+        overflow: hidden;
+        animation: loading 2s infinite linear;
+    }
+}
+}
+
+
+@keyframes loading {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

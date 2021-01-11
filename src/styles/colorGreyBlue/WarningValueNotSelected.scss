@@ -1,0 +1,120 @@
+@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+.GB-WarningValueNotSelected{
+
+    width: 37%;
+    padding: 1em;
+    align-items: stretch !important;
+    font-size: 1.7em;
+    font-weight: 900;
+    text-align: center;
+    
+    //box with text
+    >div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem 0 1rem 0em;
+        letter-spacing: 2px;
+        line-height: 10px;
+        text-transform: uppercase;
+        word-spacing: 8px; 
+        margin-bottom: .7em 0 0 0;
+
+        >:nth-child(1){
+           // margin-left: -3em;
+        }
+        
+        >span{
+            font-size: 1.5em;
+            color: $warning-color-red;
+            padding: .5em 0 1.5em 0;
+            
+        } 
+        >p{
+            @media screen and (max-width: 1140px){
+                font-size: .6em;
+            }
+            font-size: .7em;
+        }
+    }
+    
+    //коробка с кнопками
+    >div:last-of-type{
+        display: flex;
+        align-self: center;
+        font-size: .8em;
+        margin: .8em 0;
+        cursor: pointer;
+    }
+            
+}
+.GB-WarningHelp{
+    
+    >p{
+        text-transform: lowercase;
+        font-size: .9em;
+        margin: .7em 0 0 5em;
+        text-align: left;
+
+        >span{
+            margin-right: 15px;
+        }
+    }
+}
+@media screen and (max-width: 1140px){
+    .GB-WarningHelp>p{
+        font-size: .75em;
+    } 
+}
+
+.GB-ButtonWarningHelp{
+        display: block;
+        width: 60px;
+        height: 45px;
+        font-size: 1.8rem;
+        color: $warning-color-red;
+        cursor: pointer;
+        padding-top: 5%;
+        border-radius: 4px;
+}
+.GB-ButtonWarningComeBack{
+
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        height: 45px;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding-top: 5%;
+        border-radius: 4px;
+    
+        >*{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: $warning-color;
+            margin-top: 5px;
+        }
+}
+.GB-ButtonWarningComeBack:hover, 
+.GB-ButtonWarningHelp:hover{
+        transition: all 150ms ease-in-out;
+        background: $warning-button-background_hover;
+        box-shadow: $warning-button-shadow_hover;
+}
+.GB-ButtonWarningHelp:hover>*{
+    transition: all 150ms ease-in-out;
+    font-size: 2rem;
+}
+.GB-ButtonWarningComeBack:active, 
+.GB-ButtonWarningHelp:active{
+        transition: all 200ms ease-in-out;
+        background: $warning-button-background_active;
+        box-shadow: $warning-button-shadow_active;
+}
+.GB-ButtonWarningHelp:active>*{
+    transition: all 150ms ease-in-out;
+    font-size: 1.8rem;
+}

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Table",
+    "\\src\\containers",
+    "\\src\\containers\\EditWindow",
+    "\\src\\sagas",
+    "\\src\\sagas\\EltypeClasse",
+    "\\src\\store",
+    "\\src\\store\\reducers"
+  ],
+  "SelectedNode": "\\src\\containers\\baseEltypeClass\\EltypeClassWindowEdit.js",
+  "PreviewInSolutionExplorer": false
+}

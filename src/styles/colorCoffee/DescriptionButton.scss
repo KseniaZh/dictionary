@@ -1,0 +1,12 @@
+    .DescriptionButton {
+        z-index: 1000;
+        display: flex !important;
+        position: fixed !important;
+        height: 20px !important;
+        width: auto !important;
+        background: transparent !important;
+        font-family: 'Vollkorn', serif;
+        font-size: 17px !important;
+        font-style: italic;
+        color: $header-color !important;
+    }

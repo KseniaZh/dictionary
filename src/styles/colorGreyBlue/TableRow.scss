@@ -1,0 +1,83 @@
+﻿@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+.GB-UserRowTable,
+.GB-EltypeClassRowTable,
+.GB-ViewTypeRowTable{
+
+    > th:nth-child(1), > td:nth-child(1) {
+        width: 3%;
+        padding: 0;
+        >div{
+            @include childrenAllParent;
+            border: 0px;
+            
+            span{
+                //display: flex;
+                @include childrenAllParent;
+                font-size: .8em;
+            }
+        }
+    }
+
+    th:nth-child(n) {
+
+        > :nth-child(1) {
+            color: $background-NavigationButton-hover;
+        }
+    }
+}
+
+.GB-UserRowTable {
+
+    > th:nth-child(2), > td:nth-child(2) {
+        width: 12%;
+    }
+
+    > th:nth-child(3), > td:nth-child(3) {
+        width: 20%;
+    }
+
+    > th:nth-child(4), > td:nth-child(4) {
+        width: 45%;
+    }
+
+    > th:nth-child(5), > th:nth-child(5) {
+        width: 8%;
+    }
+
+    > td:nth-child(5), > td:nth-child(6) {
+        width: 9%;
+    }
+}
+
+.GB-EltypeClassRowTable{
+
+    > th:nth-child(2), > td:nth-child(2) {
+        width: 55%;
+    }
+
+    > th:nth-child(3), > td:nth-child(3) {
+        width: 20%;
+    }
+
+    > th:nth-child(4), > td:nth-child(4) {
+        width: 20%;
+    }
+}
+.GB-ViewTypeRowTable{
+     > th:nth-child(2), > td:nth-child(2) {
+        width: 20%;
+    }
+
+    > th:nth-child(3), > td:nth-child(3) {
+        width: 35%;
+    }
+
+    > th:nth-child(4), > td:nth-child(4) {
+        width: 18%;
+    }
+    > th:nth-child(5), > td:nth-child(5) {
+        width: 18%;
+    }
+}

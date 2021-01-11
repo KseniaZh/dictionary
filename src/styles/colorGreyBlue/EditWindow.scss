@@ -1,0 +1,42 @@
+@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+
+.GB-WindowEditWindow {
+
+        width: 38%;
+        height: auto;
+        padding: 2rem 2rem;
+        font-size: 1.2em;
+
+        > div {
+            display: flex;
+            width: 100%;
+        }
+        // button x
+        > div:first-of-type {
+            @include button-window-closse-x;
+        }
+        //заголовок
+        > div:nth-of-type(2) {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            color: $warning-color;
+            margin-top: 1rem;
+            font-size: 1.4rem;
+            cursor: default;
+        }
+        // form input
+        @include form-window;
+
+        //консоль с кнопками
+        > div:last-of-type {
+            @include buttons-console-yes-no;
+        }
+        .GB-beautifulCheckbox{
+                margin-top: -.5em !important;
+            }
+
+}

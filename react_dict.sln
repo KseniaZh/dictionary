@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A71E8BED-191A-4CA1-A25C-16989E3B1D3E}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		package-lock.json = package-lock.json
+		package.json = package.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E875D60-2CD8-4A01-B9D2-3B7C626BCEEB}
+	EndGlobalSection
+EndGlobal

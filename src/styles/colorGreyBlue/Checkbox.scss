@@ -1,0 +1,97 @@
+@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+
+@keyframes click-wave {
+    0% {
+        height: 20px;
+        width: 20px;
+        opacity: 0.1;
+        position: relative;
+    }
+
+    100% {
+        height: 56px;
+        width: 56px;
+        margin-left: -20px;
+        margin-top: -18px;
+        border-radius: 30%;
+        opacity: 0;
+    }
+}
+
+.GB-beautifulCheckbox, 
+.GB-beautifulCheckboxTable{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; 
+
+    height: 0px !important;
+    width: 0px !important;
+
+    transition: all 0.2s ease-out 0s;
+    background: $table-background;
+    border-radius: 3px;
+    color: $warning-color;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    outline: none;
+    position: relative;
+    z-index: 10;
+    >*{
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 20px !important;
+        width: 20px !important;
+    }
+}
+.GB-beautifulCheckboxTable{
+    background: inherit;
+    border-color: inherit;
+    border: none !important;
+    transition: all 0s ease-out 0s;
+    margin-left: 48%;
+}
+
+.GB-beautifulCheckbox:checked::before, 
+.GB-beautifulCheckboxTable:checked::before {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 10px;
+}
+
+.GB-beautifulCheckbox:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: $warning-color;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.GB-beautifulCheckboxTable:checked::after {
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+input[type="checkbox"] {
+
+}
+
+input[type="checkbox"]:disabled {
+}
+

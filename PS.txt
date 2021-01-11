@@ -1,0 +1,11 @@
+===== Картинки связанные элементы:
+
+Home 	-> '../../components/Photogallery/Photogallery' -> '../../UserInterface/Img/Img'
+	-> ../../constans/ImageGallery/image  - массив с картинками -> import iceBaikal from '../../image/iceBaikal.jpg' папка с фото
+
+важен одинаковый уровень вложенности простейшего компонента '../../UserInterface/Img/Img' 
+и файла хранения констант ../../constans/ImageGallery/image для совпадения путей к фото
+так же при составлении контейнера обязательно указать путь не напрямую, а через имя
+
+
+=====

@@ -1,0 +1,151 @@
+@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+.GB-Personalize{
+    display: flex;
+
+    @include box-all-body;
+    background: $authorization-background;
+    color: $warning-color;
+    font-family: $font-family-1;
+    font-size: 1.1em;
+    font-style: normal;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    >div{
+        height: 83%;
+        margin: 0.6em;
+        background:  $warning-background-auth;
+        box-shadow: none;
+        border-radius: 2px;
+        >*>*{
+           cursor: pointer;
+        }
+    }
+    
+    // left window
+    >div:nth-child(1){
+        width: 30%;
+        padding: 3em;
+        margin-right: 0;
+        
+        h1{
+            display: flex;
+            margin: -.5em 0 1em 1em;
+        }
+        h3{
+            margin-left: .5em;
+        }
+        h3:nth-child(3), h3:nth-child(2)>span
+        {
+            color: $warning-color-hover;
+            font-weight: bolder;
+        }    
+    }
+    
+    // right window
+    >div:nth-child(2){
+        width: 64%;
+        padding: 3em;
+        margin-left: .4em;
+
+        // all buttons
+        >div{
+            padding: 1em 0 1em 3em;
+            font-weight: 800;
+            
+            label:nth-child(1) {
+                padding-right: 5%;
+            }
+            label:nth-child(2) {
+                margin-left: 3%;
+                input{
+                   padding-top: 15%;
+                }
+            }
+            
+            label:hover{
+               color: $warning-color-hover;
+            }
+            
+            select, option{
+                background: $table-background;
+                color: $warning-color;
+                font-family: $font-family-1;
+                font-size: 1.1em;
+                font-style: $font-style-1;
+                width: 20%;
+                height: 30px;
+                border: none;
+                border-radius: 3px;
+                outline: none !important;
+            }
+            select:hover, input:hover{
+                color: $warning-color-hover;
+                box-shadow: $personalize-shadow_hover;
+            }
+        }
+
+        //buttons change password
+        >div:nth-child(4){
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            // 1 button change password
+            >div:nth-child(1){
+                width: 50%;
+                padding-right: 5%;
+
+                >*{
+                    text-decoration: none;
+                    color: $warning-color;
+                }
+                >*:hover{
+                    color: $warning-color-hover;
+                }
+            }
+
+            // 2 button change password
+            >div:nth-child(2){
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 3%;
+                    border-radius: 3px;
+                    outline: none !important;
+                    transition: all 150ms ease-in-out;
+                    @include children-center;
+                    font-size: 20px;
+                    background: $warning-button-background;
+                    box-shadow: $warning-button-shadow;
+                    >*{
+                        @include childrenAllParent;
+                        text-align: center;
+                        padding-top: 25%;
+                        color: $warning-color;
+                    }
+                    >*:hover{
+                        color: $warning-color-hover;
+                    }
+                }
+                >div:nth-child(2):hover{
+                    font-size: 22px;
+                    background: $warning-button-background_hover;
+                    box-shadow: $warning-button-shadow_hover;
+                }
+                >div:nth-child(2):active{
+
+                    background: $warning-button-background_active;
+                    box-shadow: $warning-button-shadow_active;
+                }
+        }
+    }
+}

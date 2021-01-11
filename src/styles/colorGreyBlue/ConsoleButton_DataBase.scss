@@ -1,0 +1,59 @@
+// DataBase -> header -> ConsoleButton
+
+@import "./const_color_GreyBlue.scss";
+@import "../mixin_const.scss";
+
+.GB-DataBase__header__console {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 30%;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2%;
+    margin-left: 3%;
+
+    div {
+        display: flex;
+        width: 45px;
+        height: 45px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        outline: none !important;
+        background: $button-console-background;
+        border: $button-console-border;
+
+
+        * {
+            @include box-central-flex(flex, 100%, 100%, space-around, center);
+            text-decoration: none;
+            color: $color-NavigationButton-Text;
+            opacity: .85;
+            >*{
+                font-size: $button-console-size;
+            }
+        }
+        :hover {
+            transition: all 150ms ease-in-out;
+            background: $button-console-background_hover;
+            box-shadow: $button-console-box-shadow_hover;
+            border-radius: 3px;
+            * {
+                opacity: 1;
+                font-size: $button-console-size_hover;
+            }
+        }
+        :active {
+            transition: all 200ms ease-in-out;
+            background: $button-console-background_active;
+            box-shadow: $button-console-box-shadow_active;
+
+            * {
+                opacity: 1;
+               // color: $header-color_active;
+                font-size: $button-console-size_active;
+            }
+        }
+    }
+}

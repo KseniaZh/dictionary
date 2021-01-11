@@ -1,0 +1,117 @@
+@import "./const_color_Coffee.scss";
+@import "../mixin_const.scss";
+
+.WarningValueNotSelected{
+
+    display: flex;
+    width: 40%;
+    height: auto;
+    padding: 1em;
+    
+    @include box-central-position;
+    align-items: stretch !important;
+    font-size: 1.5em;
+    text-align: center;
+    
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    >div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem 0 1rem 0;
+        letter-spacing: 2px;
+        line-height: 10px;
+        text-transform: uppercase;
+        word-spacing: 8px; 
+        margin-bottom: .7em 0 0 0;
+        
+        >span{
+            font-size: 2em;
+            color: $warning-color-red;
+            padding: .5em 0 .5em 0;
+        } 
+        >p{
+            @media screen and (max-width: 1140px){
+                font-size: 1em;
+            }
+        }
+    }
+    
+    //коробка с кнопками
+    >div:last-of-type{
+        display: flex;
+        align-self: center;
+        margin: 1rem 0 0 0;
+        cursor: pointer;
+    }
+            
+}
+.WarningHelp{
+    
+    >p{
+        text-transform: lowercase;
+        font-size: .9em;
+        margin: .7em 0 0 5em;
+        text-align: left;
+
+        >span{
+            margin-right: 15px;
+        }
+    }
+}
+@media screen and (max-width: 1140px){
+    .WarningHelp>p{
+        font-size: .75em;
+    } 
+}
+
+.ButtonWarningHelp{
+        display: block;
+        width: 60px;
+        height: 45px;
+        font-size: 1.8rem;
+        color: $warning-color-red;
+        cursor: pointer;
+        padding-top: 5%;
+        border-radius: 4px;
+}
+.ButtonWarningComeBack{
+
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        height: 45px;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding-top: 5%;
+        border-radius: 4px;
+    
+        >*{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: $warning-color;
+            margin-top: 5px;
+        }
+}
+.ButtonWarningComeBack:hover, .ButtonWarningHelp:hover{
+        transition: all 150ms ease-in-out;
+        background: $warning-button-background_hover;
+        box-shadow: $warning-button-shadow_hover;
+}
+.ButtonWarningHelp:hover>*{
+    transition: all 150ms ease-in-out;
+    font-size: 2rem;
+}
+.ButtonWarningComeBack:active, .ButtonWarningHelp:active{
+        transition: all 200ms ease-in-out;
+        background: $warning-button-background_active;
+        box-shadow: $warning-button-shadow_active;
+}
+.ButtonWarningHelp:active>*{
+    transition: all 150ms ease-in-out;
+    font-size: 1.8rem;
+}

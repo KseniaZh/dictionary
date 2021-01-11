@@ -1,0 +1,17 @@
+$button-console-background: inherit;
+$button-console-background_hover: linear-gradient(to top, #949aad, #dadce0 65%, #949aad);
+$button-console-background_active: linear-gradient(to top, #949aad, #dadce0 30%, #949aad);
+
+$button-console-border-radius: 4px;
+
+$button-console-border: none;
+$button-console-border_hover: 1 px solid #9898aa;
+$button-console-border_active: 3px solid gainsboro;
+
+$button-console-box-shadow: none;
+$button-console-box-shadow_hover: 0px 3px 3px 3px #384362;
+$button-console-box-shadow_active: 0px 1px 1px 1px #384362;
+
+$button-console-color: #a6b9ed;
+$button-console-color_hover: #af164b;
+$button-console-color_active: #163faf;

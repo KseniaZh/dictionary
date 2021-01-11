@@ -1,0 +1,241 @@
+﻿@import "./const_color_Coffee.scss";
+@import "../mixin_const.scss";
+
+body{
+    background: $background-body;
+}
+
+.DataBase__container {
+    @include box-all-body;
+    display: flex;
+    margin: .5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: stretch;
+    user-select: none;
+    background: $background-DataBase__container;
+    border-radius: 10px;
+    color: $background-NavigationButton-hover;
+
+
+    .DataBase__header__container {
+
+        @include box-all-body (relative, 0, 0, 90%, 0);
+        margin: 0% 1% 0 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        background: $background-DataBase__header__container;
+
+        .DataBase__header__header {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 75%;
+
+            h1 {
+                margin: 2% 0 3% 1% !important;
+            }
+
+            h2 {
+                margin-left: 1% !important;
+                margin-bottom: 0 !important;
+            }
+        }
+        // button back compare window
+        > :nth-child(3) {
+            padding-top: 1%;
+
+            span {
+                font-size: 1.5rem;
+                color: $background-NavigationButton-hover;
+                opacity: .7;
+            }
+
+            span:hover {
+                opacity: 1;
+            }
+        }
+
+        .searchInputDatalis_HeaderDataBase {
+            position: fixed;
+            top: 12%;
+            left: 4%;
+            width: 25%;
+
+            label {
+                width: 10%;
+                padding-right: 5%;
+            }
+
+            label:hover + input {
+                cursor: pointer;
+                background-color: $table-background;
+            }
+
+            input {
+                width: 50%;
+                height: 3%;
+                background-color: transparent;
+                border: none;
+                outline: none !important;
+                cursor: pointer;
+            }
+
+            input:focus, input:hover {
+                background-color: $table-background;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+
+    .DataBase__table__container {
+        // border: 1px solid red; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        @include box-all-body (absolute, 15%, .7%, 0%, .7%);
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+            background: $table-background;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+            background: $table-background;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: $table-scrollbar-background;
+            border-radius: 10px;
+        }
+    }
+
+    thead {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        //        position: fixed;
+        width: 100%;
+        // height: 4%;
+        margin: 0;
+
+        tr {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+            :nth-child(n) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                //кнопки внутри заголовка таблицы
+                > :nth-child(1) {
+                    color: $background-NavigationButton-hover;
+                    opacity: 1;
+                    align-content: center;
+                }
+
+                > :nth-child(2), > :nth-child(3), > :nth-child(4) {
+                    opacity: .5;
+                    height: 25px;
+                    width: 20px;
+                    margin-left: 3px;
+                    cursor: pointer;
+
+                    > * {
+                        @include childrenAllParent;
+
+                        > * {
+                            @include childrenAllParent;
+                        }
+                    }
+                }
+
+                > :nth-child(2):hover, > :nth-child(3):hover, > :nth-child(4):hover, 
+                > :nth-child(2):active, > :nth-child(3):active, > :nth-child(4):active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
+
+
+    tbody {
+        display: flex;
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        overflow: auto;
+        max-height: 87%;
+        background: $table-background;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+        tr {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 55px;
+
+            :nth-child(1) {
+                @include tr-border;
+                @include children-center;
+
+                > div {
+                    @include box-central-flex(flex, 100%, 100%, space-around, center);
+                    font-size: 1.4rem;
+                    color: $background-NavigationButton-hover;
+                    opacity: .6;
+                }
+
+                > div:hover {
+                    font-size: 1.6rem;
+                    opacity: 1;
+                }
+            }
+
+            :nth-child(2) {
+                padding: 1% 0 1% 1%;
+                @include tr-border;
+            }
+
+            :nth-child(3), :nth-child(4) {
+                padding: 0 0 0 1%;
+                @include tr-border;
+                @include children-center(flex-start);
+            }
+
+            :nth-child(5), :nth-child(6) {
+                @include children-center;
+                @include tr-border;
+            }
+        }
+    }
+}
+
+
+    .DescriptionButton {
+        z-index: 1000;
+        display: flex !important;
+        position: fixed !important;
+        height: 20px !important;
+        width: auto !important;
+        background: transparent !important;
+        font-family: 'Vollkorn', serif;
+        font-size: 17px !important;
+        font-style: italic;
+        color: $header-color !important;
+    }
+

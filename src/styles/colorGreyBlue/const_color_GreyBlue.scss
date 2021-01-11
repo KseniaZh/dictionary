@@ -1,0 +1,157 @@
+$button-console-background: inherit;
+$button-console-background_hover: linear-gradient(to top, #949aad, #dadce0 65%, #949aad);
+$button-console-background_active: linear-gradient(to top, #949aad, #dadce0 30%, #949aad);
+
+$button-console-border-radius: 4px;
+
+$button-console-border: none;
+$button-console-border_hover: 1 px solid #9898aa;
+$button-console-border_active: 3px solid gainsboro;
+
+$button-console-box-shadow: none;
+$button-console-box-shadow_hover: 0px 3px 3px 3px #384362;
+$button-console-box-shadow_active: 0px 1px 1px 1px #384362;
+
+$button-console-color: #a6b9ed;
+$button-console-color_hover: #af164b;
+$button-console-color_active: #163faf;
+
+// color clouds #ecf0f1
+
+//Body
+
+$background-body: rgb(222, 226, 234);
+
+// Navigation 
+
+$background-Navigation: linear-gradient(90deg, rgba(222, 226, 234, 0.55), rgba(222, 226, 234, 1));
+$background-NavigationButton: transparent;
+$background-NavigationButton-hover: rgb(12, 22, 52);
+$background-NavigationButton-active: rgb(25, 37, 75);
+$background-NavigationWindowBlind: rgba(4, 11, 33, 0.7);
+$background-Navigation-LinkAbout: linear-gradient(90deg, rgba(4, 11, 33, 0.65), rgba(4, 11, 33, .8));
+
+$box-shadow-NavigationLinkAbout: 0px 0px 2px 2px rgba(4, 11, 33, 0.8) inset;
+$color-border-NavigationLinkAbout: rgba(222, 226, 234, 0.3);
+$color-NavigationButton-Text: rgb(12, 22, 52);
+$color-NavigationButton-Text-hover: rgb(222, 226, 234);
+$color-navigationLink-About: rgb(222, 226, 234);
+
+//Home
+
+
+
+// DataBase -> 
+$background-DataBase__container: rgba(208, 212, 221, 0.9);
+$box-shadow-DataBase__container: 0px 0px 30px 30px rgba(4, 0, 44, .7);
+
+// DataBase -> header 
+
+$header-color: rgba(12, 22, 52, 0.7);
+$header-color_hover: rgb(4, 0, 44);
+$header-color_active: rgb(8, 8, 141);
+
+// DataBase -> header -> ConsoleButton
+
+$button-console-background: inherit;
+$button-console-background_hover: linear-gradient(to top, rgba(148, 154, 173, 0.4), rgb(225, 228, 235) 65%, rgba(148, 154, 173, 0.5));
+$button-console-background_active: linear-gradient(to top, rgba(148, 154, 173, 0.5), rgb(225, 229, 239) 30%, rgba(148, 154, 173, 0.4));
+
+$button-console-border: none;
+$button-console-border_hover: 5px;
+$button-console-border_active: none;
+
+$button-console-box-shadow: none;
+$button-console-box-shadow_hover: 0px 2px 2px 1px rgba(56, 67, 98, 0.1);
+$button-console-box-shadow_active: 0px 0px 1px 1px rgba(56, 67, 98, 0.05);
+
+$button-console-size: 1.2rem;
+$button-console-size_hover: 1.5rem;
+$button-console-size_active: 1.5rem;
+
+
+// DataBase -> Table
+//focus row "rgba(46, 61, 108, 0.4)"
+
+$table-background: rgb(237, 239, 244);
+$table-border-color:rgba(148, 154, 173, 0.54);
+$table-scrollbar-background: linear-gradient(90deg, rgba(40, 54, 98, 0.3), #dadce0, rgba(13, 30, 88, 0.5));
+$rowFocus_Coffee: rgba(148, 154, 173, 0.4);
+$table-shadow: 0rem 0rem 5em .1em rgba(5, 22, 78, 0.2);
+
+// DataBase -> ConsoleCountRow
+
+$button-small-background-hover: linear-gradient(180deg, rgba(209, 201, 192, 0.2) 10%, rgb(250, 246, 240) 45%,rgba(198, 186, 180, 0.9) 100%);
+$button-console-footer-background_hover: linear-gradient(to top, rgba(148, 154, 173, 0.8), rgb(233, 234, 237) 55%, rgba(192, 198, 216, 1));
+$button-console-footer-background_activ:linear-gradient(to top, rgba(148, 154, 173, 0.8), rgb(233, 234, 237) 25%, rgba(192, 198, 216, 1));
+    
+$button-console-footer-border_hover:none;
+$button-console-footer-border_activ:none;
+
+$button-small-shadow:none;
+$button-console-footer-shadow_hover:0px 2px 1px 2px rgba(148, 154, 173, 0.8);
+$button-console-footer-shadow_activ:0px 1px 1px 1px rgba(56, 67, 98, 0.3);
+
+
+// Warning
+
+$warning-color: rgb(12, 22, 52);
+$warning-color-p: rgb(190, 1, 8);
+$warning-color-hover: rgb(17, 22, 152);
+$warning-color-red: #ce2c2c;
+
+$warning-wrapper-background: #b7bccc;
+$warning-background: rgba(1, 5, 16, 0.4);
+$warning-background-auth: linear-gradient(90deg, rgb(222, 226, 234), rgb(222, 226, 234));
+$warning-shadow:  0px 0px 12px 2px #8e7a7a;
+
+
+$warning-button-background: linear-gradient(180deg, rgb(231, 234, 240) 5%, rgb(199, 206, 221) 100%);
+$warning-button-background_2: linear-gradient(180deg, rgba(250, 247, 243, 1) 5%,rgba(198, 186, 180, 1) 100%);
+$warning-button-background_hover: linear-gradient(180deg, rgba(148, 154, 173, 0.16) 10%, rgb(242, 245, 252) 45%, rgb(199, 206, 221) 100%);
+$warning-button-background_active: linear-gradient(180deg, rgba(148, 154, 173, 0.16) 10%, rgb(242, 245, 252) 75%, rgba(199, 206, 221, 1) 100%);
+
+$warning-button-shadow: 0px 1.5px 1px 1px rgba(148, 154, 173, 0.5);
+$warning-button-shadow_hover: 0px 2.5px 2px 2px rgba(148, 154, 173, 0.6);
+$warning-button-shadow_active: 0px 1px 1px 1px rgba(148, 154, 173, 0.7);
+
+//Authorization
+
+$authorization-background: linear-gradient(1deg, rgba(11, 16, 29, 0.4) 0%, rgba(12, 22, 52, 0.35) 100%);
+$authorization-box-shadow: 0px 0px 1px 3px #0a1431;
+$login-auth-change-box-shadow: 0px 0px 70px 2px rgba(118, 99, 90, 0.9);
+$color-activ: rgb(6, 14, 214);
+
+
+//Personalize
+
+$personalize-background-hover: linear-gradient(180deg, rgba(232, 226, 219, .1) 10%, rgb(247, 242, 237) 45%, rgba(198, 186, 180, .1) 100%);
+$personalize-shadow_hover:0px 0px 1px 1px rgba(12, 22, 52, 0.8);
+$personalize-window-box-shadow: 0px 0px 15px 2px rgba(118, 99, 90, 0.5);
+
+//ContextMenuWindow
+
+$background-context-menu:linear-gradient(190deg, rgb(222, 226, 234), rgb(210, 214, 224));
+
+$context-menu-shadow: 0px 0px 5px 1px rgba(12, 22, 52, .9);
+$context-menu-color: rgba(57, 43, 43, 0.9);
+$button-context-background_hover: linear-gradient(180deg, rgba(148, 154, 173, 0.16) 10%, rgb(242, 245, 252) 45%, rgb(199, 206, 221) 100%);
+$button-context-background_active: linear-gradient(180deg, rgba(148, 154, 173, 0.16) 10%, rgb(242, 245, 252) 75%, rgba(199, 206, 221, 1) 100%);
+
+    
+// input
+
+$focus-background: white;
+$focus-shadow: rgb(193, 200, 217);
+
+$invalid-background:rgba(252, 173, 173, 0.72);
+$invalid-shadow: rgba(252, 6, 6, 0.99);
+
+
+// ШРИФТЫ
+
+$font-family-1: 'Jura', sans-serif;
+$font-family-2: 'Literata', serif;
+$font-style-1: italic;
+$font-style-before: italic;
+$font-style-link-about: italic;

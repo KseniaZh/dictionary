@@ -1,0 +1,13 @@
+    .GB-DescriptionButton {
+        z-index: 1000;
+        display: flex !important;
+        position: fixed !important;
+        height: 20px !important;
+        width: auto !important;
+        background: transparent !important;
+        font-family: $font-family-2;
+        font-size: 14px !important;
+        font-style:normal;
+        font-weight: 400;
+        color: $header-color !important;
+    }

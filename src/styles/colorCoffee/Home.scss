@@ -1,0 +1,23 @@
+@import "./const_color_Coffee.scss";
+@import "../mixin_const.scss";
+
+.Home{
+
+    display: flex;
+    height: 100%;
+    
+    >div:nth-child(1){
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        s
+        // color logo => $background-body: rgba(175, 169, 165, 1);     
+        >div:nth-child(1){
+            margin-left: 3em;
+        }
+    }
+    
+    
+}

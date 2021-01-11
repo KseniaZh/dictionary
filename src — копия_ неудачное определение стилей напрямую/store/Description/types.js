@@ -1,2 +1,0 @@
-export const ADD_DESCRIPTION = 'HOC/ADD_DESCRIPTION';
-

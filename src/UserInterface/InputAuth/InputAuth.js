@@ -30,6 +30,7 @@ function InputAuth(props){
                 placeholder={props.placeholder}
                 onChange={(event) => props.onchange(event, nameInput)}
                 onFocus={() => props.onfocus(nameInput, flagInput)}
+                onKeyDown={props.onkeydown}
                 value={props.value}
                 tabIndex={props.tabindex}
                 disabled={props.disabled}

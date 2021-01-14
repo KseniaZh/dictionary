@@ -95,6 +95,13 @@ class Authorization extends React.Component {
         this.props.startSagasAuthGETloginRequestServer(); //слушатель саги делает запрос по логину
     }
 
+    onkeydownPassword = event => {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            this.hendlerSave();
+        };
+    }
+
     hendlerInitialRegistration = () => {
         this.props.changeFlagPrimaryRegistration(true);
     }
@@ -145,6 +152,7 @@ class Authorization extends React.Component {
                             onfocus={this.onfocus}
                             flagInput={this.state.warningPassword}
                             onclick={this.onclick}
+                            onkeydown={this.onkeydownPassword}
                             styles={this.props.flagRepeatPasswordAuth ? {} : { boxShadow: `0px 0px 1px 2px ${this.props.stateStylesAll[this.props.staleSelect].colorWarning} inset` }}
                             />
                 

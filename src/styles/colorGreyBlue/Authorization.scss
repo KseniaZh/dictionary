@@ -171,87 +171,95 @@
     }
 }
 
-.GB-LoginAuthChange{
-    h2{
+.GB-LoginAuthChange {
+    h2 {
         text-align: center;
         margin-top: 0;
     }
-    h3{
+
+    h3 {
         margin-left: 4em;
         color: $warning-color-red;
     }
-
     // button x
     > div:first-of-type {
         @include button-window-closse-x;
         margin: -10px -20px;
-         > * > span {
+
+        > * > span {
             font-size: 1.1rem;
-             opacity: .6;
+            opacity: .6;
         }
+
         > * > span:hover {
             font-size: 1.3rem;
             opacity: 1;
         }
-        
     }
-    
+
     @include form-window;
+
     > form {
         margin-right: -2%;
-            width: 102%;
+        width: 102%;
+
         > div {
             margin-right: -20%;
-            >*{
-                :last-child{
+
+            > * {
+                :last-child {
                     margin-left: 40%;
                     cursor: pointer;
                     width: 1.2em;
                     opacity: .4;
                     font-size: 1.2em;
                 }
-                :last-child:hover{
+
+                :last-child:hover {
                     opacity: 1;
                 }
-                :last-child:active{
+
+                :last-child:active {
                     opacity: .8;
                 }
             }
         }
     }
-    
     //buttons console
     > div:nth-child(4) {
         @include buttons-console-footer-window;
     }
-    
     // WindowValidationResult
-    > div:nth-child(5){
+    > div:nth-child(5) {
         display: flex;
         position: fixed;
-        background: $warning-button-background_2;
-        box-shadow: $warning-button-shadow;;
-        padding: .5rem 1rem 1.5rem 1.5rem;
-        border-radius: 15px;
         width: 90%;
         height: auto;
-        top: 80%;
-        left: 14%;
-        
-        >div{
-            >div{
+        top: 77%;
+        left: 10%;
+        background: $warning-button-background_2;
+        box-shadow: none;
+        padding: .5rem 1rem 1.5rem 1.5rem;
+        border-radius: 5px;
+        border-left: 15px solid rgba(12, 22, 52, .9);
+
+
+        > div {
+            > div {
                 margin: 0 0 .5em 1em;
-                >span{
+
+                > span {
                     padding-right: 1em;
                 }
             }
-            >div>div{
-                @include buttons-console-footer-window;  
-                margin: -2em 0 0 7em; 
-                
+
+            > div > div {
+                @include buttons-console-footer-window;
+                margin: -2em 0 0 7em;
             }
         }
-        h4{
+
+        h4 {
             margin: 2em 0 0 1em;
             color: $warning-color-red;
         }
